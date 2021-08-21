@@ -25,15 +25,15 @@
                         </h1>
                         <p>Apple M1 chip with 8-core CPU with 4 performance coresand 4 efficiency cores, 7- core GPU, and 16-core neural Engine 8Gb unified memory 256GB SSd storage Two THunderbolt /USB 4 ports Magic Mouse Magic Keyboard- US English</p>
                         <h5>memory</h5>
-                        <button id="memory-low">8GB unified memory </button>
-                        <button id="memory-heigh">16GB unified memory </button>
+                        <button id="memory-low" onclick="addMemory(0)">8GB unified memory </button>
+                        <button id="memory-heigh" onclick="addMemory(180)">16GB unified memory </button>
                         <h5>Storage</h5>
-                        <button id="storage-low">256GB SSD storage</button>
-                        <button id="storage-medium">512GB SSD storage</button>
-                        <button id="storage-heigh">1TB SSD storage</button>
+                        <button id="storage-low" onclick="addStorage(0)">256GB SSD storage</button>
+                        <button id="storage-medium" onclick="addStorage(100)">512GB SSD storage</button>
+                        <button id="storage-heigh" onclick="addStorage(180)">1TB SSD storage</button>
                         <h5>Choose your delivery option</h5>
-                        <button id="delivery-late">Friday,Aug25 FREE Prime Delivery</button>
-                        <button id="delivery-first">Friday,Aug21 Delivery charge $20</button>
+                        <button id="delivery-late" onclick="addDelivery(0)">Friday,Aug25 FREE Prime Delivery</button>
+                        <button id="delivery-first" onclick="addDelivery(20)">Friday,Aug21 Delivery charge $20</button>
                     </div>
                       <div class="mt-300">
                         <table class="table">
@@ -64,13 +64,13 @@
                           </table>
                           <h6>Add promo code</h6>
                           <input type="text" id="promo">
-                          <button id="apply-promo">Apply</button>
+                          <button id="apply-promo" class="bg-grey">Apply</button>
                       </div>
                   </div>
                 </div>
               </div>
               <hr class="container ">
-              <h1 class="text-center">Total $<span id="promo">1299</span></h1>
+              <h1 class="text-center">Total $<span id="final">1299</span></h1>
         </section>
     </main>
     <script src="mac-Book.js"></script>
